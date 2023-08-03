@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>The primary primitive data types in Python are integers, floating-point numbers, complex numbers, strings, and booleans. Here are some questions to assess your understanding of these:</p>
+    <h2 id="integers">Integers</h2>
+    <ol type="1">
+      <li><p>How would you convert a float or a string to an integer?</p></li>
+      <li><p>What does it mean that integers in Python 3 are of arbitrary size?</p></li>
+      <li><p>What is the difference between <code>//</code> and <code>/</code> when performing division operations in Python?</p></li>
+    </ol>
+    <h2 id="floats-floating-point-numbers">Floats (Floating-Point numbers)</h2>
+    <ol type="1">
+      <li><p>How do you round a floating-point number to a specific number of decimal places in Python?</p></li>
+      <li><p>Can you explain the limitations of floating point arithmetic and why it might lead to seemingly odd results (for example, <code>0.1 + 0.2 != 0.3</code>)?</p></li>
+      <li><p>How would you convert a string or an integer to a float?</p></li>
+    </ol>
+    <h2 id="complex-numbers">Complex Numbers</h2>
+    <ol type="1">
+      <li><p>How would you define a complex number in Python?</p></li>
+      <li><p>How can you access the real and imaginary parts of a complex number?</p></li>
+    </ol>
+    <h2 id="strings">Strings</h2>
+    <ol type="1">
+      <li><p>How do you concatenate two strings?</p></li>
+      <li><p>What are some methods for formatting strings in Python? Can you give examples of each?</p></li>
+      <li><p>What is string slicing? Give an example of how you might use it.</p></li>
+      <li><p>What is the difference between a string's <code>find()</code> and <code>index()</code> methods?</p></li>
+      <li><p>What are escape sequences in Python strings, and when might you use them?</p></li>
+      <li><p>How would you convert a number to a string? And a string to a number?</p></li>
+    </ol>
+    <h2 id="booleans">Booleans</h2>
+    <ol type="1">
+      <li><p>What values in Python are considered “falsy”?</p></li>
+      <li><p>What is the difference between <code>==</code> and <code>is</code> when comparing variables in Python?</p></li>
+      <li><p>How would you use the <code>and</code>, <code>or</code>, and <code>not</code> boolean operators in Python?</p></li>
+      <li><p>Can you explain short-circuit evaluation in the context of boolean operations?</p></li>
+    </ol>
+    <hr />
+    <p><em>This <a href="{{ url_for('assessment') }}">link</a> will bring you back to the main assessment.</em></p>
+{% endblock content %}

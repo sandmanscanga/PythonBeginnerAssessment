@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>Here are some questions to gauge your understanding of Python's built-in functions:</p>
+    <ol type="1">
+      <li><p>What is the difference between <code>len()</code>, <code>max()</code>, <code>min()</code>, and <code>sum()</code> functions?</p></li>
+      <li><p>How would you use the <code>enumerate()</code> function in a for loop?</p></li>
+      <li><p>What does the <code>type()</code> function do? Can you provide an example where it might be useful?</p></li>
+      <li><p>Explain how the <code>map()</code> function works. Provide an example.</p></li>
+      <li><p>Similarly, explain how the <code>filter()</code> function works. Provide an example.</p></li>
+      <li><p>What is the purpose of the <code>range()</code> function? How does it differ from <code>xrange()</code> in Python 2?</p></li>
+      <li><p>How does the <code>zip()</code> function work? Give an example.</p></li>
+      <li><p>Explain the difference between <code>sorted()</code> and <code>list.sort()</code>.</p></li>
+      <li><p>How can you use the <code>any()</code> and <code>all()</code> functions in Python? When might they be useful?</p></li>
+      <li><p>What does the <code>isinstance()</code> function do?</p></li>
+      <li><p>How would you use the <code>input()</code> function in a script that interacts with a user?</p></li>
+      <li><p>What are <code>ord()</code> and <code>chr()</code> functions? In what scenarios can they be useful?</p></li>
+      <li><p>What is the purpose of <code>globals()</code> and <code>locals()</code> functions?</p></li>
+      <li><p>How do <code>str()</code>, <code>int()</code>, <code>float()</code>, and <code>bool()</code> functions behave differently?</p></li>
+      <li><p>Explain the <code>eval()</code> function and the security implications of using it.</p></li>
+    </ol>
+    <hr />
+    <p><em>This <a href="{{ url_for('assessment') }}">link</a> will bring you back to the main assessment.</em></p>
+{% endblock content %}

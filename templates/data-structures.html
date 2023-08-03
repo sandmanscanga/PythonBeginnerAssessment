@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>Here are some potential questions to assess your understanding of Python data structures like lists, tuples, sets, and dictionaries:</p>
+    <h2 id="list">List</h2>
+    <ol type="1">
+      <li><p>How would you add an element to the end of a Python list? How about inserting it at a specific index?</p></li>
+      <li><p>What's the difference between <code>list.pop(index)</code> and <code>del list[index]</code>?</p></li>
+      <li><p>What is list comprehension and can you provide an example of it?</p></li>
+      <li><p>How would you sort a list in ascending order? How about descending order?</p></li>
+      <li><p>How can you reverse a list in Python?</p></li>
+      <li><p>How can you remove duplicates from a list while preserving order?</p></li>
+      <li><p>Describe the difference between shallow copy and deep copy in the context of lists.</p></li>
+    </ol>
+    <h2 id="tuple">Tuple</h2>
+    <ol type="1">
+      <li><p>How is a tuple different from a list?</p></li>
+      <li><p>Can you modify an element of a tuple? Explain your answer.</p></li>
+      <li><p>When would you use a tuple instead of a list?</p></li>
+      <li><p>How can you convert a tuple to a list and vice versa?</p></li>
+    </ol>
+    <h2 id="set">Set</h2>
+    <ol type="1">
+      <li><p>What is a set in Python?</p></li>
+      <li><p>What are the primary use cases for a set?</p></li>
+      <li><p>How can you add and remove elements from a set?</p></li>
+      <li><p>Can you perform set operations like union, intersection, difference, and symmetric difference in Python? Give examples.</p></li>
+      <li><p>Why can't a set contain mutable elements like lists or dictionaries?</p></li>
+    </ol>
+    <h2 id="dict-dictionary">Dict (Dictionary)</h2>
+    <ol type="1">
+      <li><p>What is a dictionary in Python and when is it typically used?</p></li>
+      <li><p>How would you add a new key-value pair to a dictionary? How would you modify an existing key-value pair?</p></li>
+      <li><p>How can you access all keys, all values, and all key-value pairs in a dictionary?</p></li>
+      <li><p>How would you handle a situation where you try to access a key that doesn't exist in a dictionary?</p></li>
+      <li><p>What's the difference between the methods <code>dict.pop(key)</code> and <code>dict.popitem()</code>?</p></li>
+      <li><p>How would you merge two dictionaries?</p></li>
+      <li><p>Describe a situation where it might be useful to use a dictionary comprehension.</p></li>
+    </ol>
+    <hr />
+    <p><em>This <a href="{{ url_for('assessment') }}">link</a> will bring you back to the main assessment.</em></p>
+{% endblock content %}

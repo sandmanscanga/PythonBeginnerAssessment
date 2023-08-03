@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>This assessment will gauge how well you understand the basics of <strong>Python</strong>. It is broken down into the following sections:</p>
+    <ol type="1">
+      <li><p><a href="{{ url_for('data_types') }}">Data Types</a></p></li>
+      <li><p><a href="{{ url_for('data_structures') }}">Data Structures</a></p></li>
+      <li><p><a href="{{ url_for('builtin_functions') }}">Builtin Functions</a></p></li>
+      <li><p><a href="{{ url_for('control_flow_logic') }}">Control Flow Logic</a></p></li>
+      <li><p><a href="{{ url_for('functions') }}">Functions</a></p></li>
+    </ol>
+    <p>Once you have finished answering the above questions, complete the <a href="{{ url_for('live_code_challenges') }}">live code challenges</a>.</p>
+{% endblock content %}
